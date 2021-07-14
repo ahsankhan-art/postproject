@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.post %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @post.created_by %>
+</p>
+
+<p>
+  <strong>Likes:</strong>
+  <td><%= @post.likes.count %> <%= (@post.likes.count) == 1 ? 'Like' : 'Likes'%></td>
+</p>
+
+
+<%= link_to 'Back', posts_path %>
